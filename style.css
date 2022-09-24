@@ -1,0 +1,43 @@
+.card-container{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: flex-start;
+}
+
+.card_at_end{
+    background: white;
+    border: 1px solid black;
+    color: black;
+    transform: translateX(50px);
+    transition: 150ms;
+    padding: 21px 0;
+    height:79px;
+}
+.cardnew{
+    background: red !important;
+    opacity: 0;
+    border: 1px solid blue;
+    transform: translateX(50px);
+    transition: 150ms;
+    padding: 5px;
+    content:url('./a.jpg');
+    height:79px;
+}
+
+.card{
+    background: white;
+    opacity: 0;
+    border: 1px solid black;
+    color: black;
+    transform: translateX(50px);
+    transition: 150ms;
+    padding: 5px;
+    content:url('./a.jpg');
+    height:79px;
+}
+
+.card.show{
+    transform: translateX(0);
+    opacity: 1 !important;
+}
